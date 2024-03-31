@@ -20,6 +20,10 @@ a {
     --branco-ite: #F5F5F5;
 }
 
+.header {
+    margin-bottom: 35px;
+}
+
 .cabecalho {
     display: flex;
     align-items: center;
