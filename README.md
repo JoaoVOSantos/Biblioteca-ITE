@@ -5,6 +5,3 @@
 
 # TELA PADRÃO: cabecalho.html
   Usar essa tela como template para criação das outras
-  <br/>
-
-## Para facilitar, arquivos html e css de cada página podem ser salvos com o mesmo nome, mudando apenas a extensão
