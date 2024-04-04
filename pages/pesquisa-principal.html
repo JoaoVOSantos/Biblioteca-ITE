@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca On-Line</title>
+    <link rel="stylesheet" href="../styles/cabecalho.css">
+    <link rel="stylesheet" href="../styles/pesquisa-principal.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="cabecalho">
+            <div class="logo-ite">
+                <a href="https://ite.edu.br"><img src="../images/ite-branco.png" width="70px"></a>
+            </div>
+            <div class="textos-cabecalho">
+                <div class="texto-cima">
+                    <p>Biblioteca On Line - Sistema de Consulta</p>
+                </div>
+                <div class="texto-baixo">
+                    <ul>
+                        <li><a href="#" class="servicos-menu">Serviços</a></li> <!--vitorhugouau-->
+                        <li><a href="#" class="pesquisa-menu">Pesquisa</a></li>
+                        <li><a href="#" class="reservas-menu">Reservas</a></li>
+                        <li><a href="#" class="renovacoes-menu">Renovações</a></li>
+                        <li><a href="#" class="acervo-menu">Acervo</a></li>
+                        <li><a href="#" class="download-menu">Download</a></li>
+                        <li><a href="#" class="novidades-menu">Novidades</a></li>
+                        <li><a href="#" class="faleconosco-menu">Fale Conosco</a></li> <!--vitorhugouau-->
+                        <li><a href="https://www.ite.edu.br/paginas/links-interessantes">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cima">
+            <div class="form-pesquisa">
+                <p>Selecione os parâmetros para sua pesquisa, ignore cedilha, pontos e acentos ao digitar os termos.</p>
+                <form>
+                    <label for="biblioteca">
+                        Biblioteca:
+                        <select name="geral" id="geral">
+                            <option value="geral">GERAL</option>
+                            <option value="rui-barbosa">RUI BARBOSA (Bauru)</option>
+                            <option value="primeiro-de-agosto">1º DE AGOSTO (Bauru)</option>
+                            <option value="mestrado">MESTRADO (Bauru)</option>
+                            <option value="marcio-leite-de-toledo">MARCIO LEITE DE TOLEDO (Bot)</option>
+                        </select>
+                    </label>
+                    <label for="midia">
+                        Mídia:
+                        <select name="midia" id="midia">
+                            <option value="geral">GERAL</option>
+                            <option value="geral">RUI BARBOSA (Bauru)</option>
+                            <option value="geral">1º DE AGOSTO (Bauru)</option>
+                            <option value="geral">MESTRADO (Bauru)</option>
+                            <option value="geral">MARCIO LEITE DE TOLEDO (Bot)</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <div class="textos-info"></div>
+        </div>
+        <div class="baixo"></div>
+    </main>
+
+
+<script src="js/cabecalho.js"></script>
+</body>
+</html>
