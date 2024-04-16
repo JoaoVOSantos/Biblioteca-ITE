@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/pesquisa-principal.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     
@@ -21,14 +22,14 @@
                 </div>
                 <div class="texto-baixo">
                     <ul>
-                        <li><a href="#" class="servicos-menu">Serviços</a></li> <!--vitorhugouau-->
+                        <li><a href="#" class="servicos-menu">Serviços</a></li>
                         <li><a href="#" class="pesquisa-menu">Pesquisa</a></li>
                         <li><a href="#" class="reservas-menu">Reservas</a></li>
                         <li><a href="#" class="renovacoes-menu">Renovações</a></li>
                         <li><a href="#" class="acervo-menu">Acervo</a></li>
                         <li><a href="#" class="download-menu">Download</a></li>
                         <li><a href="#" class="novidades-menu">Novidades</a></li>
-                        <li><a href="#" class="faleconosco-menu">Fale Conosco</a></li> <!--vitorhugouau-->
+                        <li><a href="#" class="faleconosco-menu">Fale Conosco</a></li>
                         <li><a href="https://www.ite.edu.br/paginas/links-interessantes">Links</a></li>
                     </ul>
                 </div>
@@ -36,15 +37,16 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-content">
         <div class="cima">
             <div class="form-pesquisa">
-                <p>Selecione os parâmetros para sua pesquisa, ignore cedilha, pontos e acentos ao digitar os termos.</p>
-                <form>
+                <p class="text-main">Selecione os parâmetros para sua pesquisa, ignore cedilha, pontos e acentos ao digitar os termos.</p>
+                <form class="form">
                     <label for="biblioteca">
                         Biblioteca:
                         <select name="geral" id="geral">
-                            <option value="geral">GERAL</option>
+                            <option default value="empty"> </option>
+                            <option value="geral-biblioteca">GERAL</option>
                             <option value="rui-barbosa">RUI BARBOSA (Bauru)</option>
                             <option value="primeiro-de-agosto">1º DE AGOSTO (Bauru)</option>
                             <option value="mestrado">MESTRADO (Bauru)</option>
@@ -54,21 +56,57 @@
                     <label for="midia">
                         Mídia:
                         <select name="midia" id="midia">
-                            <option value="geral">GERAL</option>
-                            <option value="geral">RUI BARBOSA (Bauru)</option>
-                            <option value="geral">1º DE AGOSTO (Bauru)</option>
-                            <option value="geral">MESTRADO (Bauru)</option>
-                            <option value="geral">MARCIO LEITE DE TOLEDO (Bot)</option>
+                            <option default value="empty"> </option>
+                            <option value="geral-midia">Geral (exceto artigo)</option>
+                            <option value="cd">CD</option>
+                            <option value="dvd">DVD</option>
+                            <option value="livro">Livro</option>
+                            <option value="teses">Teses, Dissertações e TCC</option>
+                            <option value="video">Vídeo</option>
+                            <option value="periodico">Periódico</option>
+                            <option value="artigo-periodico">Artigo de Periódico</option>
                         </select>
                     </label>
+                    <label for="midia">
+                        Pesquisar por:
+                        <select name="pesquisar-por" id="pesquisar-por">
+                            <option default value="empty"> </option>
+                            <option value="autor">Autor</option>
+                            <option value="titulo">Título</option>
+                            <option value="assunto">Assunto</option>
+                            <option value="colecao">Coleção</option>
+                            <option value="notas">Notas</option>
+                            <option value="tombo">Tombo</option>
+                            <option value="genero">Gênero</option>
+                            <option value="isbn">ISBN</option>
+                            <option value="issn">ISSN</option>
+                        </select>
+                    </label>
+                    <label for="argumento">
+                        Argumento:
+                        <input type="text" name="argumento" id="argumento">
+                    </label>
                 </form>
+                <div>
+                    <button class="btn">Consultar</button>
+                    <button class="btn">Cancelar</button>
+                </div>
             </div>
-            <div class="textos-info"></div>
+            <div class="container-textos-img">
+                <div class="textos-informativos">
+                    <h3 class="renovacao">Renovação On-Line</h3>
+                    <p>O Sistema de Bibliotecas da ITE oferece a opção de Renovação de Empréstimos pela Internet, proporcionando mais praticidade aos usuários. Para renovar, basta acessar o site, clicar em "Renovações", informar o tombo do livro e a senha. Em caso de dúvida, também é possível fazer a renovação por telefone. Acesse o site das Bibliotecas para ficar por dentro das novidades de obras disponíveis.
+                    </p>
+                </div>
+                <div class="fotos">
+                    <img src="../images/RTOnline.jpg" width="60px" alt="">
+                </div>
+            </div>
         </div>
         <div class="baixo"></div>
     </main>
 
-
+<script src="js/pesquisa-principal.js"></script>
 <script src="js/cabecalho.js"></script>
 </body>
 </html>
