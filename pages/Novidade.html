@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades</title>
+    <link rel="stylesheet" href="../styles/novidade.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="/image/x-icon">
+    
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="cabecalho">
+            <div class="logo-ite">
+                <a href="https://ite.edu.br"><img src="../images/ite-branco.png" width="70px"></a>
+            </div>
+            <div class="textos-cabecalho">
+                <div class="texto-cima">
+                    <p>Biblioteca On Line - Sistema de Consulta</p>
+                </div>
+                <div class="texto-baixo">
+                    <ul>
+                        <li><a href="#" class="servicos-menu">Serviços</a></li>
+                        <li><a href="#" class="pesquisa-menu">Pesquisa</a></li>
+                        <li><a href="/TRABALHO-ENG-SOFTWARE-II/pages/reservas.html" class="reservas-menu">Reservas</a></li>
+                        <li><a href="#" class="renovacoes-menu">Renovações</a></li>
+                        <li><a href="#" class="acervo-menu">Acervo</a></li>
+                        <li><a href="#" class="download-menu">Download</a></li>
+                        <li><a href="/TRABALHO-ENG-SOFTWARE-II/pages/Novidade.html" class="novidades-menu">Novidades</a></li>
+                        <li><a href="#" class="faleconosco-menu">Fale Conosco</a></li>
+                        <li><a href="https://www.ite.edu.br/paginas/links-interessantes">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- NOVIDADES -->
+
+    
+    
+        <img src="../images/fundo-ite-NOVIDADES.jpg" method="get" class="fundo-ite-NOVIDADES">
+   
+    
+    <form action="recebeNovidade.html" class="formulario-base">
+        <label for="Titulo" class="titulo-pesquisa">Resultado da pesquisa - formato resumido: </label><!--caminho da pesquisa, fazer depois  -->
+        <br>
+
+<div class="opcao2">
+        <div class="titulo-biblioteca">
+        <label for="Biblioteca" class="Biblioteca" >Biblioteca</label>
+            <select name="Biblioteca" aria-label="Default select example" >
+                <option value="1">Geral</option>
+                <option value="1" >Rui Barbosa(Bauru)</option>
+                <option value="2">1° de Agosto(Bauru)</option>
+                <option value="3">Mestrado(Bauru)</option>
+                <option value="4">Marcio Leite de Toledo (Bot)</option>
+                <option value="5">4 de Julho (Ibotinga)</option>
+            </select>
+        </div>
+
+        <div class="titulo-periodo">
+            <label for="Periodo" class="Periodo">Periodo</label>
+            <select name="Periodo" id="Periodo">
+                <option value="1">15 dias</option>
+                <option value="2">30 dias</option>
+                <option value="3">45 dias</option>
+                <option value="4">60 dias</option>
+            </select>
+        </div>
+
+        <div class="titulo-midia">
+            <label for="Mídia" class="Midia">Mídia</label>
+            <select name="Mídia" id="Mídia" class="select-midia">
+
+                <option value="">Artigo de Períodico</option>
+                <option value="">CD</option>
+                <option value="">DVD</option>
+                <option value="">Livro</option>
+                <option value="">Períodico</option>
+                <option value="">Teses, Disertações, TCCs</option>
+                <option value="">Fita de video</option>
+            </select>
+
+        </div>
+
+        <div class="botoes">
+            <button type="submit" class="botaoConsultar">Consultar</button>
+            <button type="reset" class="botaoCancelar">Cancelar</button>
+        </div>
+
+
+
+
+        
+    </div>
+        </form>
+        
+         
+   
+
+<script src="js/cabecalho.js"></script>
+
+
+</body>
+</html>
