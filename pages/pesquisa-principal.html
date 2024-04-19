@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <div id="overlay"></div>
+
     
     <header class="header">
         <div class="cabecalho">
@@ -89,8 +91,8 @@
                         </label>
                     </form>
                     <div>
+                        <button onclick="exibeCancel()" class="btn">Cancelar</button>
                         <button onclick="alertasInputs()" class="btn">Consultar</button>
-                        <button onClick="" class="btn">Cancelar</button>
                     </div>
                 </div>
                 <div class="container-textos-img">
@@ -132,6 +134,14 @@
             <p>Segunda a Sexta - 14h às 16h30 / 18h às 21h45</p>
         </div>
     </main>
+
+    <div class="modal-confirmacao">
+        <h3>Deseja realmente cancelar<br>a pesquisa?</h3>
+        <div class="buttons-modal">
+            <button onclick="voltarForm()" class="btn">Voltar</button>
+            <button onclick="resetaForm()" class="btn">Confirmar</button>
+        </div>
+    </div>
 
 
 <script src="../js/pesquisa-principal.js"></script>

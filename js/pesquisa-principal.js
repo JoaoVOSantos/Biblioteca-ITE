@@ -77,8 +77,47 @@ function alertasInputs() {
     const inputPesquisarPor = document.getElementById('pesquisar-por');
     const inputArgumento = document.getElementById('argumento');
 
-    if (inputBiblio.value == 'empty' || inputMidia.value) {
-        alert('teste');
+    if (inputBiblio.value == 'empty' ||
+        inputMidia.value == 'empty' ||
+        inputPesquisarPor.value == 'empty' ||
+        inputArgumento.value == '') {
+        alert('Preencha todos os campos do Formulário de Pesquisa.');
+    } else {
+        alert('pesquisa');
     }
+    
 }
 
+//função para resetar o formulário qdo clicar no botao de cancelar
+function resetaForm() {
+    const inputBiblio = document.getElementById('geral');
+    const inputMidia = document.getElementById('midia');
+    const inputPesquisarPor = document.getElementById('pesquisar-por');
+    const inputArgumento = document.getElementById('argumento');
+    const modalConfirmacao = document.querySelector('.modal-confirmacao');
+    const overlay = document.getElementById('overlay');
+
+    inputBiblio.value = 'empty';
+    inputMidia.value = 'empty';
+    inputPesquisarPor.value = 'empty';
+    inputArgumento.value = '';
+    modalConfirmacao.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+//função para exibir o modal de confirmacao
+function exibeCancel() {
+    const modalConfirmacao = document.querySelector('.modal-confirmacao');
+    modalConfirmacao.style.display = 'flex';
+    document.getElementById('overlay').style.display = 'block';
+}
+
+
+//função para confirmar e fazer pesquisa
+function voltarForm() {
+    const modalConfirmacao = document.querySelector('.modal-confirmacao');
+    const overlay = document.getElementById('overlay');
+
+    modalConfirmacao.style.display = 'none';
+    overlay.style.display = 'none';
+}
