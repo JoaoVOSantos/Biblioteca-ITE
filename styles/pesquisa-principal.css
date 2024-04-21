@@ -241,6 +241,11 @@ a {
 }
 
 
+.separador-main {
+    position: relative;
+    right: 150px;
+}
+
 .modal-confirmacao {
     text-align: center;
     display: none;
