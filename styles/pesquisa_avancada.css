@@ -1,0 +1,25 @@
+#pesquisa-avancada {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+body{
+  background-color: #f7f7f7;
+}
+
+#pesquisa-avancada {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+}
+.formulario select:focus, .formulario input:focus
+{
+    border: 1px solid var(--verde-claro-um);
+    outline: 1px solid var(--verde-claro-um);
+}
+
