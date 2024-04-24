@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca On-Line</title>
+    <link rel="stylesheet" href="styles/cabecalho.css">
+    <link rel="stylesheet" href="/styles/pesquisa-principal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="cabecalho">
+            <div class="logo-ite">
+                <a href="https://ite.edu.br"><img src="images/ite-branco.png" width="70px"></a>
+            </div>
+            <div class="textos-cabecalho">
+                <div class="texto-cima">
+                    <p>Biblioteca On Line - Sistema de Consulta</p>
+                </div>
+                <div class="texto-baixo">
+                    <ul>
+                        <li><a href="/pages/serviços.html" class="servicos-menu">Serviços</a></li>
+                        <li><a href="/index.html" class="pesquisa-menu">Pesquisa</a></li>
+                        <li><a href="/pages/reservas.html" class="reservas-menu">Reservas</a></li>
+                        <li><a href="#" class="renovacoes-menu">Renovações</a></li>
+                        <li><a href="/pages/acervo.html" class="acervo-menu">Acervo</a></li>
+                        <li><a href="#" class="download-menu">Download</a></li>
+                        <li><a href="/pages/Novidade.html" class="novidades-menu">Novidades</a></li>
+                        <li><a href="/pages/faleconosco.html" class="faleconosco-menu">Fale Conosco</a></li>
+                        <li><a href="https://www.ite.edu.br/paginas/links-interessantes">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="separador-main">
+        <div class="main-content">
+            <div class="cima">
+                <div class="form-pesquisa">
+                    <p class="text-main">Selecione os parâmetros para sua pesquisa, ignore cedilha, pontos e acentos ao digitar os termos.</p>
+                    <form class="form">
+                        <label for="biblioteca">
+                            Biblioteca:
+                            <select name="geral" id="geral">
+                                <option default value="empty"> </option>
+                                <option value="geral-biblioteca">GERAL</option>
+                                <option value="rui-barbosa">RUI BARBOSA (Bauru)</option>
+                                <option value="primeiro-de-agosto">1º DE AGOSTO (Bauru)</option>
+                                <option value="mestrado">MESTRADO (Bauru)</option>
+                                <option value="marcio-leite-de-toledo">MARCIO LEITE DE TOLEDO (Bot)</option>
+                            </select>
+                        </label>
+                        <label for="midia">
+                            Mídia:
+                            <select name="midia" id="midia">
+                                <option default value="empty"> </option>
+                                <option value="geral-midia">Geral (exceto artigo)</option>
+                                <option value="cd">CD</option>
+                                <option value="dvd">DVD</option>
+                                <option value="livro">Livro</option>
+                                <option value="teses">Teses, Dissertações e TCC</option>
+                                <option value="video">Vídeo</option>
+                                <option value="periodico">Periódico</option>
+                                <option value="artigo-periodico">Artigo de Periódico</option>
+                            </select>
+                        </label>
+                        <label for="midia">
+                            Pesquisar por:
+                            <select name="pesquisar-por" id="pesquisar-por">
+                                <option default value="empty"> </option>
+                                <option value="autor">Autor</option>
+                                <option value="titulo">Título</option>
+                                <option value="assunto">Assunto</option>
+                                <option value="colecao">Coleção</option>
+                                <option value="notas">Notas</option>
+                                <option value="tombo">Tombo</option>
+                                <option value="genero">Gênero</option>
+                                <option value="isbn">ISBN</option>
+                                <option value="issn">ISSN</option>
+                            </select>
+                        </label>
+                        <label for="argumento">
+                            Argumento:
+                            <input type="text" name="argumento" id="argumento">
+                        </label>
+                    </form>
+                    <div>
+                        <button onclick="exibeCancel()" class="btn">Cancelar</button>
+                        <button onclick="alertasInputs()" class="btn">Consultar</button>
+                    </div>
+                    <a href="/pages/pesquisa_avancada.html"><button style="margin-top: -10px; position: relative; top: -10px;" class="btn">Pesquisa Avançada</button></a>
+                </div>
+                <div class="container-textos-img">
+                    <div class="textos-informativos">
+                        <h3 class="renovacao">Renovação On-Line <i id="infos-horarios" class="bi bi-info-square"></i></h3>
+
+                        <p>O Sistema de Bibliotecas da ITE oferece a opção de Renovação de Empréstimos pela Internet, proporcionando mais praticidade aos usuários. Para renovar, basta acessar o site, clicar em "Renovações", informar o tombo do livro e a senha. Em caso de dúvida, também é possível fazer a renovação por telefone. Acesse o site das Bibliotecas para ficar por dentro das novidades de obras disponíveis.
+                        </p>
+                    </div>
+                    <div class="fotos-container">
+                        <div class="fotos">
+                            <a href="http://bibliort.ite.edu.br/revistatribunais/index.asp"><img class="images-page" id="rtonline" src="../images/RTOnline.jpg" width="60px"></a>
+                            <a href="http://biblioteca.ite.edu.br/saraiva/index.asp"><img class="images-page" id="saraiva" src="../images/saraiva.png" width="60px"></a>
+                            <a href="https://biblioteca.nubedelectura.com/cloudLibrary/login/auth"><img class="images-page" id="tirant" src="../images/tirant.png" width="60px"></a>
+                            <a href="https://bdtd.ibict.br/vufind/"><img class="images-page" id="bdtd" src="../images/bdtd.jpg" width="60px"></a>
+                            <a href="https://www-periodicos-capes-gov-br.ezl.periodicos.capes.gov.br/index.php?"><img class="images-page" id="acessolivre" src="../images/acessolivre.png" width="60px"></a>
+                            <a href="http://www.dominiopublico.gov.br/pesquisa/PesquisaObraForm.jsp"><img class="images-page" id="dominiopublico" src="../images/dominio_publico.png" width="60px"></a>
+                        </div>
+                        <div class="nomes-fotos">
+                            <p class="rtonline">RTOnline</p>
+                            <p class="saraiva">Saraiva</p>
+                            <p class="tirant">Tirant</p>
+                            <p class="bdtd">BDTD</p>
+                            <p class="periodicos">Periódicos</p>
+                            <p class="dominiopublico">Domínio Público</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="baixo"></div>
+        </div>
+        <div class="horarios">
+            <h2>HORÁRIOS DE FUNCIONAMENTO</h2>
+            <h3>Bibliotecas Rui Barbosa e 1º de Agosto</h3>
+            <p>Segunda a Sexta - 7h15 às 21h45</p>
+            <h3>Biblioteca da Pós-Graduação</h3>
+            <p>Segunda a Sexta : 7h15 às 21h45</p>
+            <h3>Bibliotecas Marcio Leite de Toledo</h3>
+            <p>Segunda a Sexta - 14h às 16h30 / 18h às 21h45</p>
+        </div>
+    </main>
+
+    <div class="modal-confirmacao">
+        <h3>Deseja realmente cancelar<br>a pesquisa?</h3>
+        <div class="buttons-modal">
+            <button onclick="voltarForm()" class="btn">Voltar</button>
+            <button onclick="resetaForm()" class="btn">Confirmar</button>
+        </div>
+    </div>
+
+   
+
+<script src="js/cabecalho.js"></script>
+<script src="../js/pesquisa-principal.js"></script>
+</body>
+</html>
