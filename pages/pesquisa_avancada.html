@@ -43,13 +43,12 @@
     <form class="formulario" action="#">
       <label class="label-biblioteca" for="biblioteca">Biblioteca:</label>
       <select id="biblioteca" name="biblioteca">
-        <option value="">Todas</option>
+        <option value="geral">GERAL</option>
         <option value="rui-barbosa">RUI BARBOSA (Bauru)</option>
         <option value="1-de-agosto">1º DE AGOSTO (Bauru)</option>
         <option value="mestrado">MESTRADO (Bauru)</option>
         <option value="marcio-leite-de-toledo">MARCIO LEITE DE TOLEDO (Botucatu)</option>
         <option value="4-de-julho">4 DE JULHO (Ibitinga)</option>
-        <option value="geral">GERAL</option>
       </select>
       <br>
       <label for="midia">Mídia:</label>
@@ -94,11 +93,11 @@
       <label for="titulo">Título:</label>
       <input type="text" id="titulo" name="titulo" placeholder="Digite o título">
       <br>
-      <button type="submit">Pesquisar</button>
+      <button onclick="alertaInputs()" type="submit">Pesquisar</button>
     </form>
   </div>
 
-    <script src="js/cabecalho.js"></script>
+    <script src="/js/pesquisa-avancada.js"></script>
 
 </body>
 

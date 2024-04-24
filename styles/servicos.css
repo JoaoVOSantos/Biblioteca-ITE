@@ -102,8 +102,13 @@ a {
     background-color: var(--verde-claro-dois);
 }
 
-.faleconosco-menu {
+.servicos-menu {
     color: var(--verde-claro-dois);
+}
+
+.main{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 200px;
 }
 
 .container{
@@ -127,44 +132,34 @@ a {
 
 }
 
-.divAll{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center
+.buttonAcerv{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background-color: #054630;
+    border-color: #30A176;
+    color: white;
+    cursor: pointer;
 }
 
-.divLeft{
-    padding: 1rem;
-    margin: 1rem;
+.titulo{
+    text-align: center;
 }
 
-.divCenter1{
-    padding: 1rem;
-    margin: 1rem;
+.mainServ{
+    margin: 30px 100px;
+    font-size: 87%;
+    padding: 15px 300px;
 }
 
-.divCenter2{
-    padding: 1rem;
-    margin: 1rem;
+dl dd{
+    margin: 0px 20px;
 }
 
-.divRight{
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.email{
-    color: royalblue;
-    text-decoration: underline;
-    
-}
-
-i{
-    filter:drop-shadow(5px 3px 1px #096a49)
-}
-
-.divFooter{
-    display: grid;
-    place-items: center;
+.footerServ{
+    text-align: center;
+    font-size: 77%;
+    margin: 0px 0px 100px 0px;
 }
