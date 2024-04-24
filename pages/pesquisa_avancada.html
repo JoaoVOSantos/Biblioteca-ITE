@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca On-Line</title>
-    <link rel="stylesheet" href="styles/cabecalho.css">
-    <link rel="stylesheet" href="styles/pesquisa_avancada.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/cabecalho.css">
+    <link rel="stylesheet" href="../styles/pesquisa_avancada.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <header class="header">
         <div class="cabecalho">
             <div class="logo-ite">
-                <a href="https://ite.edu.br"><img src="images/ite-branco.png" width="70px"></a>
+                <a href="../https://ite.edu.br"><img src="../images/ite-branco.png" width="70px"></a>
             </div>
             <div class="textos-cabecalho">
                 <div class="texto-cima">
@@ -37,7 +37,66 @@
             </div>
         </div>
     </header>
-
+  <div id="pesquisa-avancada">
+    <h1>Pesquisa Avançada</h1>
+    <p>Selecione os parâmetros para sua pesquisa, ignore cedilha, pontos e acentos ao digitar os termos.</p>
+    <form class="formulario" action="#">
+      <label class="label-biblioteca" for="biblioteca">Biblioteca:</label>
+      <select id="biblioteca" name="biblioteca">
+        <option value="">Todas</option>
+        <option value="rui-barbosa">RUI BARBOSA (Bauru)</option>
+        <option value="1-de-agosto">1º DE AGOSTO (Bauru)</option>
+        <option value="mestrado">MESTRADO (Bauru)</option>
+        <option value="marcio-leite-de-toledo">MARCIO LEITE DE TOLEDO (Botucatu)</option>
+        <option value="4-de-julho">4 DE JULHO (Ibitinga)</option>
+        <option value="geral">GERAL</option>
+      </select>
+      <br>
+      <label for="midia">Mídia:</label>
+      <select id="midia" name="midia">
+        <option value="">Todas</option>
+        <option value="cd">CD</option>
+        <option value="dvd">DVD</option>
+        <option value="livro">Livro</option>
+        <option value="teses">Teses, Dissertações e TCCs</option>
+        <option value="video">Vídeo</option>
+        <option value="periodico">Periódico</option>
+        <option value="artigo-periodico">Artigo de Periódico</option>
+      </select>
+      <br>
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
+      <br>
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor">
+      <br>
+      <label for="colecao">Coleção:</label>
+      <input type="text" id="colecao" name="colecao" placeholder="Digite o nome da coleção">
+      <br>
+      <label for="editora">Editora:</label>
+      <input type="text" id="editora" name="editora" placeholder="Digite o nome da editora">
+      <br>
+      <label for="genero">Gênero:</label>
+      <input type="text" id="genero" name="genero" placeholder="Digite o gênero">
+      <br>
+      <label for="isbn">ISBN:</label>
+      <input type="text" id="isbn" name="isbn" placeholder="Digite o ISBN">
+      <br>
+      <label for="issn">ISSN:</label>
+      <input type="text" id="issn" name="issn" placeholder="Digite o ISSN">
+      <br>
+      <label for="notas">Notas:</label>
+      <input type="text" id="notas" name="notas" placeholder="Digite notas adicionais">
+      <br>
+      <label for="tombo">Tombo:</label>
+      <input type="text" id="tombo" name="tombo" placeholder="Digite o número do tombo">
+      <br>
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Digite o título">
+      <br>
+      <button type="submit">Pesquisar</button>
+    </form>
+  </div>
 
     <script src="js/cabecalho.js"></script>
 
