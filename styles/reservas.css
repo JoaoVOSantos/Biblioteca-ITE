@@ -114,11 +114,22 @@ a {
     text-align: center;
     border: 1px solid gray;
     padding: 10px;
+<<<<<<< HEAD
     left: 30%; 
     top: 40%; 
     position: absolute; 
     right: 30%;
       
+=======
+   /* centralizar div */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 55px;
+>>>>>>> 4ca9effbac8d01d20e0b680ae1ee20dde19c15ba
     }
 
 
@@ -156,6 +167,7 @@ a {
     /* botao */
 
 .btn-confirmar{
+<<<<<<< HEAD
     background-color: var(--verde-claro-dois);
     border: none;
     color: var(--branco-ite);
@@ -172,4 +184,22 @@ a {
 }
 .btn{
     margin-top: 15px;
+=======
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background-color: var(--verde-claro-dois);
+    border-color: #30A176;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-confirmar:hover{
+    transform: scale(1.2);
+    background-color: var(--verde-principal);
+>>>>>>> 4ca9effbac8d01d20e0b680ae1ee20dde19c15ba
 }

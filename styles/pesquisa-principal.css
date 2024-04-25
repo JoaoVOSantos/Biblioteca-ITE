@@ -239,3 +239,39 @@ a {
 .horarios p {
     font-size: 14px;
 }
+
+
+.separador-main {
+    position: relative;
+    right: 150px;
+}
+
+.modal-confirmacao {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: -1px 0px 26px -1px rgba(5,70,48,0.62);
+    -webkit-box-shadow: -1px 0px 26px -1px rgba(5,70,48,0.62);
+    -moz-box-shadow: -1px 0px 26px -1px rgba(5,70,48,0.62);
+    height: 400px;
+    position: relative;
+    top: -450px;
+    right: -530px;
+    z-index: 20;
+    background: var(--branco-ite);
+}
+
+#overlay {
+    display: none; 
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 10; 
+}

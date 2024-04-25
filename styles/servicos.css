@@ -102,18 +102,13 @@ a {
     background-color: var(--verde-claro-dois);
 }
 
-.acervo-menu {
+.servicos-menu {
     color: var(--verde-claro-dois);
 }
 
 .main{
     font-family: 'Poppins', sans-serif;
     margin: 0px 200px;
-}
-@media(max-width:890px){
-    .main {
-        margin: 0px 25px;
-    }
 }
 
 .container{
@@ -143,17 +138,10 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 30px;
-    background-color: var(--verde-claro-dois);
+    background-color: #054630;
     border-color: #30A176;
     color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-}
-
-.buttonAcerv:hover{
-    transform: scale(1.2);
-    background-color: var(--verde-principal);
 }
 
 .titulo{
@@ -166,7 +154,6 @@ a {
     padding: 15px 300px;
 }
 
-
 dl dd{
     margin: 0px 20px;
 }
@@ -175,11 +162,4 @@ dl dd{
     text-align: center;
     font-size: 77%;
     margin: 0px 0px 100px 0px;
-}
-
-.lista{
-    list-style: none;
-}
-i{
-    filter:drop-shadow(5px 3px 1px #096a49)
 }

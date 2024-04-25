@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 a {
     text-decoration: none;
     color: inherit;
@@ -30,7 +31,7 @@ a {
     justify-content: space-between;
     padding: 10px 70px;
     background: var(--verde-principal);
-    height: 150px;
+    height: 150px;  
     box-shadow: 2px 1px 40px 5px rgba(0,0,0,0.56);
     -webkit-box-shadow: 2px 1px 40px 5px rgba(0,0,0,0.56);
     -moz-box-shadow: 2px 1px 40px 5px rgba(0,0,0,0.56);
@@ -105,3 +106,4 @@ a {
 .pesquisa-menu {
     color: var(--verde-claro-dois);
 }
+

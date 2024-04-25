@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca On-Line</title>
-    <link rel="stylesheet" href="../styles/cabecalho.css">
-    <link rel="stylesheet" href="../styles/pesquisa-principal.css">
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/cabecalho.css">
+    <link rel="stylesheet" href="/styles/pesquisa-principal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <div id="overlay"></div>
-
     
     <header class="header">
         <div class="cabecalho">
             <div class="logo-ite">
-                <a href="https://ite.edu.br"><img src="../images/ite-branco.png" width="70px"></a>
+                <a href="https://ite.edu.br"><img src="images/ite-branco.png" width="70px"></a>
             </div>
             <div class="textos-cabecalho">
                 <div class="texto-cima">
@@ -25,7 +23,7 @@
                 <div class="texto-baixo">
                     <ul>
                         <li><a href="/pages/serviços.html" class="servicos-menu">Serviços</a></li>
-                        <li><a href="/pages/pesquisa-principal.html" class="pesquisa-menu">Pesquisa</a></li>
+                        <li><a href="/index.html" class="pesquisa-menu">Pesquisa</a></li>
                         <li><a href="/pages/reservas.html" class="reservas-menu">Reservas</a></li>
                         <li><a href="#" class="renovacoes-menu">Renovações</a></li>
                         <li><a href="/pages/acervo.html" class="acervo-menu">Acervo</a></li>
@@ -94,7 +92,7 @@
                         <button onclick="exibeCancel()" class="btn">Cancelar</button>
                         <button onclick="alertasInputs()" class="btn">Consultar</button>
                     </div>
-                    <a href="/pages/pesquisa_avancada.html"><button style="margin-top: -20px;" class="btn">Pesquisa Avançada</button></a>
+                    <a href="/pages/pesquisa_avancada.html"><button style="margin-top: -10px; position: relative; top: -10px;" class="btn">Pesquisa Avançada</button></a>
                 </div>
                 <div class="container-textos-img">
                     <div class="textos-informativos">
@@ -144,8 +142,9 @@
         </div>
     </div>
 
+   
 
-<script src="../js/pesquisa-principal.js"></script>
 <script src="js/cabecalho.js"></script>
+<script src="../js/pesquisa-principal.js"></script>
 </body>
 </html>
