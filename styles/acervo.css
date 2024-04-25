@@ -143,10 +143,17 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 30px;
-    background-color: #054630;
+    background-color: var(--verde-claro-dois);
     border-color: #30A176;
     color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.buttonAcerv:hover{
+    transform: scale(1.2);
+    background-color: var(--verde-principal);
 }
 
 .titulo{
