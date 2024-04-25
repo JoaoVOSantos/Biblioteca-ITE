@@ -192,13 +192,11 @@ a {
 /* botoes */
 
 .botoes .botaoCancelar:hover{
-    transform: scale(1.2);
     background-color: var(--verde-principal);
     cursor: pointer;
     
 }
 .botoes .botaoConsultar:hover{
-    transform: scale(1.2);
     background-color: var(--verde-principal);
     cursor: pointer;
     
@@ -211,33 +209,27 @@ a {
 
 .botaoConsultar{
     
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 30px;
     background-color: var(--verde-claro-dois);
-    border-color: #30A176;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
     border: none;
+    color: var(--branco-ite);
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s ease;
 
 }
 
 .botaoCancelar{
     
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 30px;
     background-color: var(--verde-claro-dois);
-    border-color: #30A176;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
     border: none;
+    color: var(--branco-ite);
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s ease;
 }
 
 select:hover{
