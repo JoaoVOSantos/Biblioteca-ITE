@@ -28,7 +28,8 @@ a {
 .cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 270px;
     padding: 10px 70px;
     background: var(--verde-principal);
     height: 150px;  
@@ -58,6 +59,7 @@ a {
 
 .texto-cima p {
     animation: mudar-cor 3s infinite;
+    font-size: 23px;
 }
 
 @keyframes mudar-cor {
@@ -66,6 +68,11 @@ a {
     50% { color: var(--branco-ite); }
     75% { color: var(--verde-claro-dois); }
     100% { color: var(--verde-claro-um); }
+}
+
+.texto-baixo {
+    display: flex;
+    gap: 10px;
 }
 
 .texto-baixo ul {
@@ -107,3 +114,57 @@ a {
     color: var(--verde-claro-dois);
 }
 
+main, .modal-confirmacao {
+    display: none;
+}
+
+#menu-sanduiche {
+    display: none;
+}
+
+.faleconosco-menu {
+    white-space: nowrap;
+}
+
+@media (max-width: 1158px) {
+    #menu-sanduiche {
+        display: flex;
+    }
+
+    .textos-cabecalho {
+        align-items: flex-end;
+        margin-right: 0px;
+    }
+
+    .cabecalho {
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .texto-baixo ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .texto-baixo {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .ul-lista {
+        align-items: flex-end;
+        white-space: nowrap;
+    }
+
+    .ul-lista li a {
+        white-space: nowrap;
+    }
+
+    .faleconosco-menu {
+        white-space: nowrap;
+    }
+
+}

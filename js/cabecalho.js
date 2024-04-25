@@ -62,16 +62,16 @@ menuAcervos.addEventListener('click', function() {
     menuFaleConosco.style.color = 'var(--branco-ite)';
 });
 
-menuDownload.addEventListener('click', function() {
-    menuDownload.style.color = 'var(--verde-claro-dois)';
-    principalMenuPesquisa.style.color = 'var(--branco-ite)';
-    menuServicos.style.color = 'var(--branco-ite)';
-    menuReservas.style.color = 'var(--branco-ite)';
-    menuRenovacoes.style.color = 'var(--branco-ite)';
-    menuAcervos.style.color = 'var(--branco-ite)';
-    menuNovidades.style.color = 'var(--branco-ite)';
-    menuFaleConosco.style.color = 'var(--branco-ite)';
-});
+// menuDownload.addEventListener('click', function() {
+//     menuDownload.style.color = 'var(--verde-claro-dois)';
+//     principalMenuPesquisa.style.color = 'var(--branco-ite)';
+//     menuServicos.style.color = 'var(--branco-ite)';
+//     menuReservas.style.color = 'var(--branco-ite)';
+//     menuRenovacoes.style.color = 'var(--branco-ite)';
+//     menuAcervos.style.color = 'var(--branco-ite)';
+//     menuNovidades.style.color = 'var(--branco-ite)';
+//     menuFaleConosco.style.color = 'var(--branco-ite)';
+// });
 
 menuNovidades.addEventListener('click', function() {
     menuNovidades.style.color = 'var(--verde-claro-dois)';
@@ -94,3 +94,17 @@ menuFaleConosco.addEventListener('click', function() {
     menuDownload.style.color = 'var(--branco-ite)';
     menuNovidades.style.color = 'var(--branco-ite)';
 });
+
+
+const menuSanduiche = document.getElementById('menu-sanduiche');
+const listaCabecalho = document.querySelector('.ul-lista');
+const cabecalho = document.querySelector('.cabecalho');
+
+// document.getElementById('menu-sanduiche').addEventListener('click', function() {
+//     if (listaCabecalho.style.display == 'flex') {
+//         listaCabecalho.style.display = 'none';
+//         cabecalho.style.
+//     } else {
+//         listaCabecalho.style.display = 'flex';
+//     }
+// });
