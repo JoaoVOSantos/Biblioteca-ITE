@@ -110,6 +110,11 @@ a {
     font-family: 'Poppins', sans-serif;
     margin: 0px 200px;
 }
+@media(max-width:890px){
+    .main {
+        margin: 0px 25px;
+    }
+}
 
 .container{
     background-color:  #096a49;
@@ -154,6 +159,7 @@ a {
     padding: 15px 300px;
 }
 
+
 dl dd{
     margin: 0px 20px;
 }
@@ -162,4 +168,11 @@ dl dd{
     text-align: center;
     font-size: 77%;
     margin: 0px 0px 100px 0px;
+}
+
+.lista{
+    list-style: none;
+}
+i{
+    filter:drop-shadow(5px 3px 1px #096a49)
 }
