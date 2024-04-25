@@ -138,15 +138,18 @@ a {
 }
 
 .buttonAcerv{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 30px;
-    background-color: #054630;
-    border-color: #30A176;
-    color: white;
+    background-color: var(--verde-claro-dois);
+    border: none;
+    color: var(--branco-ite);
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.buttonAcerv:hover{
+    background-color: var(--verde-principal);
 }
 
 .titulo{
@@ -175,4 +178,8 @@ dl dd{
 }
 i{
     filter:drop-shadow(5px 3px 1px #096a49)
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 461c17cb4792b708a6b3b0df25473056da629a35
