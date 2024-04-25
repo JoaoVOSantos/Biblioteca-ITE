@@ -226,6 +226,23 @@ a {
     border: none;
 }
 
+
+select {
+    background: transparent;
+    color: inherit; /* Para manter a cor do texto consistente */
+    font-size: inherit; /* Para manter o tamanho do texto consistente */
+}
+select {
+    -webkit-appearance: none; /* Para navegadores baseados em Webkit (Chrome, Safari) */
+    -moz-appearance: none;    /* Para Firefox */
+    appearance: none;         /* Para outros navegadores */
+}
+
+select:focus {
+    outline: none;
+}
+
+
 select:hover{
     color: black;
     border-color: var(--verde-claro-um);

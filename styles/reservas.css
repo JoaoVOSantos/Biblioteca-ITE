@@ -118,17 +118,7 @@ a {
     top: 40%; 
     position: absolute; 
     right: 30%;
-    /* padding: 10px; */
-   /* centralizar div */
-   /* position: absolute; 
-   top: 40%; 
-   left: 50%; 
-   transform: translate(-50%, -50%); 
-   border-radius: 8px;
-   padding-left: auto;
-   padding-right: 10px;
-    */
-        
+      
     }
 
 
@@ -138,19 +128,16 @@ a {
     }
     .div-cadastro{
         text-align: center;
-        background-color: blue;
 
     }
-    .div-titulo{
-
-    }
+   
     .div-senha{
         text-align: center;
-        background-color: brown;
+        
     }
     .div-cadastro-senha{
         padding: 20px;
-        background-color: grey;
+        
         
 
         display: flex;

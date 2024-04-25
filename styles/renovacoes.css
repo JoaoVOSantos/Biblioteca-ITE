@@ -102,77 +102,47 @@ a {
     background-color: var(--verde-claro-dois);
 }
 
-
-.novidades-menu {
+.pesquisa-menu {
     color: var(--verde-claro-dois);
 }
 
+/* Renovações */
 
+.div-form{
 
-
-
-/* RECEBE_NOVIDADE */
-
-/* form */
-body{
-    background-color: white;
-}
-
-.form-recebe-novidade{
-    border-radius: 5px;
-    border: 1px solid gray;
-    margin: auto 200px auto 200px;
-    width: auto;
-    background-color: #f7f7f7;
-    padding: 15px;
-    box-shadow: 1px 1px 10px 1px gray;
-    margin-top: 90px;
-
-}
-
-table th, table td{
     text-align: center;
-    border: 1px solid;
-    
-    
+    border: 1px solid black;
+    margin-left: 400px;
+    margin-right: 400px;
+
 }
-table{
-    /* retirar os espaços da tabela */
-    border-collapse: collapse;
-    width: 100%;
+.form-renovacoes{
+
+
 }
 
-table caption{
-    caption-side: top;
-    font-style: italic;
-    margin-bottom: 5px;
+.div-label-titulo{
+
+    margin-bottom: 50px;
 }
 
-/* botoes */
-.btnNova_consulta {
-    background-color: var(--verde-claro-dois);
+.div-tombo{
+
+}
+
+.div-senha{
+
+}
+
+.div-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-confirmar{
     border: none;
-    color: var(--branco-ite);
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
+}
+.btn-confirmar:hover{
+    background-color: #3FD49B;
     transition: 0.4s ease;
-    margin-top: 15px;
 }
-
-.btn_botao .btnNova_consulta:hover{
-    background-color: var(--verde-principal);
-}
-
-.label-titulo{
-    text-align: left;
-}
-.btn_botao{
-    text-align: center;
-}
-
-.tr{
-    margin-block-start: 1em;
-}
-
