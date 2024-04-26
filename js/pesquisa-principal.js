@@ -95,8 +95,6 @@ function exibeCancel() {
     const modalConfirmacao = document.querySelector('.modal-confirmacao');
     modalConfirmacao.style.display = 'flex';
     document.getElementById('overlay').style.display = 'block';
-
-    console.log('oi')
 }
 
 
