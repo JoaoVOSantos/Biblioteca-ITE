@@ -114,9 +114,9 @@ a {
     color: var(--verde-claro-dois);
 }
 
-main, .modal-confirmacao {
+/* main, .modal-confirmacao {
     display: none;
-}
+} */
 
 #menu-sanduiche {
     display: none;
@@ -132,7 +132,7 @@ main, .modal-confirmacao {
     }
 
     .textos-cabecalho {
-        align-items: flex-end;
+        align-items: center;
         margin-right: 0px;
     }
 
@@ -140,22 +140,24 @@ main, .modal-confirmacao {
         align-items: center;
         justify-content: space-between;
         height: 100%;
+        gap: 20px;
+        flex-direction: column;
     }
 
     .texto-baixo ul {
         display: none;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .texto-baixo {
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
     }
 
     .ul-lista {
-        align-items: flex-end;
+        align-items: center;
         white-space: nowrap;
     }
 
@@ -165,6 +167,10 @@ main, .modal-confirmacao {
 
     .faleconosco-menu {
         white-space: nowrap;
+    }
+
+    .texto-cima p {
+        text-align: center;
     }
 
 }

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
-    overflow: hidden;
-}
 
 * {
     margin: 0;
@@ -32,7 +29,7 @@ a {
     width: 60vw;
     height: 50vh;
     border-radius: 15px;
-    padding: 30px;
+    padding: 220px;
     box-shadow: -1px 0px 26px -1px rgba(5,70,48,0.62);
     -webkit-box-shadow: -1px 0px 26px -1px rgba(5,70,48,0.62);
     -moz-box-shadow: -1px 0px 26px -1px rgba(5,70,48,0.62);
@@ -274,4 +271,57 @@ a {
     left: 0; 
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 10; 
+}
+
+#btn-mobile {
+    display: none;
+}
+
+
+@media (max-width: 1367px) {
+    .main-content {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+
+    .separador-main {
+        right: 0;
+    }
+
+    #infos-horarios {
+        display: none;
+    }
+
+    .cima {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 350px;
+        gap: 20px;
+    }
+
+    .div-botoes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .form-pesquisa {
+        width: 100%;
+    }
+
+    .fotos {
+        margin-bottom: 20px;
+    }
+
+    #btn-desktop {
+        display: none;
+    }
+    #btn-mobile {
+        display: flex;
+        background-color: rgba(140, 161, 154, 0.62);
+    }
 }

@@ -100,11 +100,11 @@ const menuSanduiche = document.getElementById('menu-sanduiche');
 const listaCabecalho = document.querySelector('.ul-lista');
 const cabecalho = document.querySelector('.cabecalho');
 
-// document.getElementById('menu-sanduiche').addEventListener('click', function() {
-//     if (listaCabecalho.style.display == 'flex') {
-//         listaCabecalho.style.display = 'none';
-//         cabecalho.style.
-//     } else {
-//         listaCabecalho.style.display = 'flex';
-//     }
-// });
+document.getElementById('menu-sanduiche').addEventListener('click', function() {
+    if (listaCabecalho.style.display == 'flex') {
+        listaCabecalho.style.display = 'none';
+        // cabecalho.style.
+    } else {
+        listaCabecalho.style.display = 'flex';
+    }
+});
