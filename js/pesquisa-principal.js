@@ -93,6 +93,8 @@ function alertasInputs() {
 //função para exibir o modal de confirmacao
 function exibeCancel() {
     const modalConfirmacao = document.querySelector('.modal-confirmacao');
+    const body = document.querySelector('.body');
+    body.style.overflow =  'hidden';
     modalConfirmacao.style.display = 'flex';
     document.getElementById('overlay').style.display = 'block';
 }
