@@ -188,19 +188,36 @@ a {
 
 /* RESERVAS */
 
-.form-reservas {
+.container-geral {
     box-shadow: 1px 1px 8px 1px gray;
     text-align: center;
     border: 1px solid gray;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.form-reservas {
+    /* box-shadow: 1px 1px 8px 1px gray;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 10px; */
     /* centralizar div */
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 8px;
     padding-left: 20px;
-    padding-right: 55px;
+    padding-right: 20px; */
 }
 
 
@@ -219,4 +236,44 @@ a {
 
 .btn-confirmar:hover {
     background-color: var(--verde-principal);
+}
+
+.label-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.div-separadora {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label-form input {
+    width: 15.625rem;
+    height: 25px;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1296px) {
+    .label-form {
+        flex-direction: column;
+        width: inherit;
+    }
+}
+
+@media (max-width: 802px) {
+    .label-form input {
+        width: 12.625rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .label-form input {
+        width: 9.625rem;
+    }
 }
