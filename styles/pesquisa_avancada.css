@@ -85,3 +85,24 @@ hr {
 }
 
 
+.texto-e-arrow-voltar {
+  display: flex;
+  align-items: center;
+  /* gap: 40px; */
+  justify-content: space-between;
+}
+
+#arrow-voltar {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: -10px;
+  color: var(--verde-claro-um);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+
+#arrow-voltar:hover {
+  color: #054630;
+}
