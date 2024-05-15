@@ -248,3 +248,27 @@ a {
     display: grid;
     place-items: center;
 }
+
+
+@media (max-width: 992px) {
+    .container-enter p {
+        font-size: 22px;
+    }
+
+    .divAll {
+        display: flex;
+        align-items: center;
+        /* position: relative; */
+        /* margin: 0 auto; */
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .divLeft, .divCenter1, .divCenter2, .divRight {
+        width: 250px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
