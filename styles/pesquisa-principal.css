@@ -325,3 +325,18 @@ a {
         background-color: rgba(140, 161, 154, 0.62);
     }
 }
+
+@media (max-width: 439px) {
+    .fotos {
+        display: none;
+    }
+
+    .form label select,
+    .form label input {
+        width: 155px;
+    }
+
+    .main-content {
+        padding: 0px;
+    }
+}
