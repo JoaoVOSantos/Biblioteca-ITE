@@ -242,3 +242,12 @@ dl dd{
     font-size: 77%;
     margin: 0px 0px 100px 0px;
 }
+
+@media (max-width: 1232px) {
+    .mainServ{
+        margin: 0px;
+        font-size: 87%;
+        padding: 0px;
+        text-align: center;
+    }
+}
