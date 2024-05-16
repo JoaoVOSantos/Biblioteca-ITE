@@ -210,15 +210,9 @@ a {
     text-align: auto;
 }*/
 
-
+/* 
 .formulario-base{
-    text-align: left;
-    
-    background-color: white;
-
-    box-shadow: 1px 1px 10px 1px gray;
-    
-    /* centralizar div */
+    centralizar div
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -226,10 +220,7 @@ a {
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 90px;
-
-    
-    
-}
+} */
 
 
 /* select */
@@ -318,4 +309,58 @@ select:hover{
     box-shadow: 1px 1px 5px 1px #30A176;
 
     
+}
+
+/* @media (max-width: ) */
+
+
+.container-geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px gray;
+    max-width: 40vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.titulo-biblioteca, .titulo-periodo, .titulo-midia {
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.titulo-biblioteca select, .titulo-periodo select, .titulo-midia select {
+    width: 150px;
+}
+
+@media (max-width: 746px) {
+    .titulo-biblioteca, .titulo-periodo, .titulo-midia {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botoes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-geral {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 420px) {
+    .titulo-biblioteca select, .titulo-periodo select, .titulo-midia select {
+        width: 120px;
+    }
 }
