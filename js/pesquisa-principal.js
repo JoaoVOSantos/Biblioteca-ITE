@@ -57,15 +57,16 @@ imageDominioPublico.addEventListener('mouseout', function () {
     titleDominioPublico.style.display = 'none';
 });
 
-
 const iconEmpty = document.getElementById('infos-horarios');
 const containerHorarios = document.querySelector('.horarios');
 
-iconEmpty.addEventListener('mouseover', function () {
-    containerHorarios.style.display = 'flex';
-});
-iconEmpty.addEventListener('mouseout', function () {
-    containerHorarios.style.display = 'none';
+iconEmpty.addEventListener('click', function () {
+    const computedStyle = window.getComputedStyle(containerHorarios);
+    if (computedStyle.display === 'none') {
+        containerHorarios.style.display = 'flex';
+    } else {
+        containerHorarios.style.display = 'none';
+    }
 });
 
 
