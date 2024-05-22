@@ -261,15 +261,13 @@ a {
 
 /* botoes */
 
-.botoes .botaoCancelar:hover{
-    background-color: var(--verde-principal);
-    cursor: pointer;
-    
-}
+
 .botoes .botaoConsultar:hover{
+    box-shadow: 1px 1px 5px 1px #054630;
+    background-color: #30A176;
     background-color: var(--verde-principal);
     cursor: pointer;
-    
+    transition: 0.4s ease;
 
 }
 .botoes{
@@ -278,7 +276,19 @@ a {
 }
 
 .botaoConsultar{
-    
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #3FD49B;
+    color: white;
+    border: none;
+    margin-right: 3px;
+}
+
+.botaoCancelar{
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #3FD49B;
+    color: white;
     background-color: var(--verde-claro-dois);
     border: none;
     color: var(--branco-ite);
@@ -291,7 +301,6 @@ a {
 }
 
 .botaoCancelar{
-    
     background-color: var(--verde-claro-dois);
     border: none;
     color: var(--branco-ite);
@@ -310,9 +319,6 @@ select:hover{
 
     
 }
-
-/* @media (max-width: ) */
-
 
 .container-geral {
     display: flex;

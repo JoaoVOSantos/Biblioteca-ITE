@@ -21,6 +21,7 @@
                     <p>Biblioteca On Line - Sistema de Consulta</p>
                 </div>
                 <div class="texto-baixo">
+                    <ul>
                     <i id="menu-sanduiche" style="font-size: 34px;" class="bi bi-list"></i>
                     <ul class="ul-lista">
                         <li><a href="/pages/serviços.html" class="servicos-menu">Serviços</a></li>
@@ -38,48 +39,59 @@
 
 
     <!-- NOVIDADES -->
+    <form action="recebeNovidade.html" class="formulario-base">
+        <label for="Titulo" class="titulo-pesquisa">Resultado da pesquisa - formato resumido: </label><!--caminho da pesquisa, fazer depois  -->
+        <br>
 
-    
-    
-        <!-- <img src="../images/fundo-ite-NOVIDADES.jpg" method="get" class="fundo-ite-NOVIDADES"> -->
-   
-    
-        <div class="container-geral">
-            <label>Resultado da pesquisa - formato resumido: </label><!--caminho da pesquisa, fazer depois  -->
-            <form action="recebeNovidade.html" class="formulario-base">
-                <br>
         <div class="opcao2">
-                <div class="titulo-biblioteca">
-                <label for="Biblioteca" class="Biblioteca" >Biblioteca</label>
-                    <select name="Biblioteca">
-                        <option value="1">Geral</option>
-                        <option value="1" >Rui Barbosa(Bauru)</option>
-                        <option value="2">1° de Agosto(Bauru)</option>
-                        <option value="3">Mestrado(Bauru)</option>
-                        <option value="4">Marcio Leite de Toledo (Bot)</option>
-                        <option value="5">4 de Julho (Ibotinga)</option>
-                    </select>
-                </div>
-                <div class="titulo-periodo">
-                    <label for="Periodo" class="Periodo">Periodo</label>
-                    <select name="Periodo" id="Periodo">
-                        <option value="1">15 dias</option>
-                        <option value="2">30 dias</option>
-                        <option value="3">45 dias</option>
-                        <option value="4">60 dias</option>
-                    </select>
-                </div>
-                <div class="titulo-midia">
-                    <label for="Mídia" class="Midia">Mídia</label>
-                    <select name="Mídia" id="Mídia" class="select-midia">
-                        <option value="">Artigo de Períodico</option>
-                        <option value="">CD</option>
-                        <option value="">DVD</option>
-                        <option value="">Livro</option>
-                        <option value="">Períodico</option>
-                        <option value="">Teses, Disertações, TCCs</option>
-                        <option value="">Fita de video</option>
-                    </select>
+            <div class="titulo-biblioteca">
+            <label for="Biblioteca" class="Biblioteca" >Biblioteca</label>
+                <select name="Biblioteca" aria-label="Default select example" >
+                    <option value="1">Geral</option>
+                    <option value="1" >Rui Barbosa(Bauru)</option>
+                    <option value="2">1° de Agosto(Bauru)</option>
+                    <option value="3">Mestrado(Bauru)</option>
+                    <option value="4">Marcio Leite de Toledo (Bot)</option>
+                    <option value="5">4 de Julho (Ibotinga)</option>
+                </select>
+        </div>
+
+        <div class="titulo-periodo">
+            <label for="Periodo" class="Periodo">Periodo</label>
+            <select name="Periodo" id="Periodo">
+                <option value="1">15 dias</option>
+                <option value="2">30 dias</option>
+                <option value="3">45 dias</option>
+                <option value="4">60 dias</option>
+            </select>
+        </div>
+
+        <div class="titulo-midia">
+            <label for="Mídia" class="Midia">Mídia</label>
+            <select name="Mídia" id="Mídia" class="select-midia">
+
+                <option value="">Artigo de Períodico</option>
+                <option value="">CD</option>
+                <option value="">DVD</option>
+                <option value="">Livro</option>
+                <option value="">Períodico</option>
+                <option value="">Teses, Disertações, TCCs</option>
+                <option value="">Fita de video</option>
+            </select>
+
+        </div>
+
+        <div class="botoes">
+            <button type="submit" class="botaoConsultar">Consultar</button>
+            <button type="reset" class="botaoCancelar">Cancelar</button>
+        </div>
+
+
+
+
+        
+    </div>
+        </form>
         
                 </div>
                 <div class="botoes">

@@ -4,69 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca On-Line</title>
-    <link rel="stylesheet" href="../styles/recebe_novidade.css">
     <link rel="stylesheet" href="../styles/cabecalho.css">
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/renovacaoinicial.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
-<body>
-    
+<body> 
     <header class="header">
         <div class="cabecalho">
             <div class="logo-ite">
-                <a href="https://ite.edu.br"><img src="../images/ite-branco.png" width="70px"></a>
+                <a href="https://ite.edu.br"><img src="images/ite-branco.png" width="70px"></a>
             </div>
             <div class="textos-cabecalho">
                 <div class="texto-cima">
                     <p>Biblioteca On Line - Sistema de Consulta</p>
                 </div>
                 <div class="texto-baixo">
-                    <i id="menu-sanduiche" style="font-size: 34px;" class="bi bi-list"></i>
-                    <ul class="ul-lista">
+                    <ul>
                         <li><a href="/pages/serviços.html" class="servicos-menu">Serviços</a></li>
                         <li><a href="/index.html" class="pesquisa-menu">Pesquisa</a></li>
                         <li><a href="/pages/reservas.html" class="reservas-menu">Reservas</a></li>
                         <li><a href="#" class="renovacoes-menu">Renovações</a></li>
                         <li><a href="/pages/acervo.html" class="acervo-menu">Acervo</a></li>
+                        <li><a href="#" class="download-menu">Download</a></li>
                         <li><a href="/pages/Novidade.html" class="novidades-menu">Novidades</a></li>
                         <li><a href="/pages/faleconosco.html" class="faleconosco-menu">Fale Conosco</a></li>
+                        <li><a href="https://www.ite.edu.br/paginas/links-interessantes">Links</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <!-- RECEBE_NOVIDADE -->
-    <form action="Novidade.html" method="get" class="form-recebe-novidade">    
-        <label for="" class="label-titulo">Resultado da pesquisa - formato resumido:</label>
-        <table class="tabela-recebe">
-            <caption>descrição da tabela</caption>
-            <thead>
-                <tr>
-                    <th>Autor</th>
-                    <th>Titulo</th>
-                    <th>Editora</th>
-                    <th>Biblioteca</th>
-                    <th>Data</th>
-                </tr>
-            </thead>
 
-            <tbody>
-                <tr>
-                    <td>d</td>
-                    <td><a href="resultado-completo.html">d</a></td>
-                    <td>d</td>
-                    <td>d</td>
-                    <td>d</td>
-                </tr>
-            </tbody>
-        </table>
 
-        <div action="" class="btn_botao">
-            <button type="submit" class="btnNova_consulta">Nova consulta</button>
+    <div class="container">
+        <div class="box">
+            <h1 class="site-title">Página de Acesso</h1>
+            <hr class="underline">
+            <form>
+                <div class="form-group">
+                    <label for="tombo">Tombo:</label>
+                    <input type="text" id="tombo" name="tombo">
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="botao-confirmar"><a href="recebeRenovacoes.html">Confirmar</a></button>
+                </div>
+            </form>
         </div>
-    </form>
-
-<script src="../js/cabecalho.js"></script>
+    </div>
 
 </body>
 </html>
