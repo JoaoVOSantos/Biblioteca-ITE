@@ -6,6 +6,7 @@
     <title>Biblioteca On-Line</title>
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/reservas.css">
+    
 </head>
 <body>
     
@@ -48,16 +49,16 @@
             <div class="teste">
                 <div class="div-cadastro-input">
                     <label >Cadastro: </label>
-                    <input type="text" placeholder="Matricula ou CPF">
+                    <input type="text" placeholder="Matricula ou CPF" id="input-cadastro">
                 </div>
 
                 <div class="div-senha-input">
                     <label>Senha: </label>
-                    <input type="text" placeholder="senha">
+                    <input type="password" placeholder="senha" id="input-senha">
                 </div>
             </div>
            
-            <button type="submit" class="btn-confirmar">Confirmar</button>
+            <button onclick="alertasInputs()" type="submit" class="btn-confirmar"  >Confirmar</button>
            
         </form>
     </div>
@@ -65,6 +66,7 @@
    
 
 <script src="js/cabecalho.js"></script>
+<script src="../js/reservas.js"></script>
 
 
 </body>

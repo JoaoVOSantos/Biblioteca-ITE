@@ -1,13 +1,13 @@
 //Alerta de validação dos inputs
-function alertasInputs() {
-    // Pegue os valores dos inputs
-    const cadastro = document.getElementById("input-cadastro").value;
-    const senha = document.getElementById("input-senha").value;
 
+// Pegue os valores dos inputs
+const cadastro = document.getElementById("input-cadastro").value;
+const senha = document.getElementById("input-senha").value;
+function alertasInputs() {
     // Se o cadastro ou a senha estiverem vazios, mostre um alerta 
-    if (cadastro === "" || senha === "") {
+    if (cadastro == "" || senha == "") {
         alert("Por favor, preencha todos os campos obrigatórios antes de confirmar.");
-        event.preventDefault(); // Previne o envio do formulário
+        // event.preventDefault(); // Previne o envio do formulário
     }
 }
 
