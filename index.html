@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
-<body>
+<body class="body">
+
+    <div id="overlay"></div>
     
     <header class="header">
         <div class="cabecalho">
@@ -21,16 +23,15 @@
                     <p>Biblioteca On Line - Sistema de Consulta</p>
                 </div>
                 <div class="texto-baixo">
-                    <ul>
+                    <i id="menu-sanduiche" style="font-size: 34px;" class="bi bi-list"></i>
+                    <ul class="ul-lista">
                         <li><a href="/pages/serviços.html" class="servicos-menu">Serviços</a></li>
                         <li><a href="/index.html" class="pesquisa-menu">Pesquisa</a></li>
                         <li><a href="/pages/reservas.html" class="reservas-menu">Reservas</a></li>
                         <li><a href="#" class="renovacoes-menu">Renovações</a></li>
                         <li><a href="/pages/acervo.html" class="acervo-menu">Acervo</a></li>
-                        <li><a href="#" class="download-menu">Download</a></li>
                         <li><a href="/pages/Novidade.html" class="novidades-menu">Novidades</a></li>
                         <li><a href="/pages/faleconosco.html" class="faleconosco-menu">Fale Conosco</a></li>
-                        <li><a href="https://www.ite.edu.br/paginas/links-interessantes">Links</a></li>
                     </ul>
                 </div>
             </div>
@@ -88,8 +89,9 @@
                             <input type="text" name="argumento" id="argumento">
                         </label>
                     </form>
-                    <div>
-                        <button onclick="exibeCancel()" class="btn">Cancelar</button>
+                    <div class="div-botoes">
+                        <button onclick="exibeCancel()" id="btn-desktop" class="btn">Cancelar</button>
+                        <button disabled id="btn-mobile" class="btn">Cancelar</button>
                         <button onclick="alertasInputs()" class="btn">Consultar</button>
                     </div>
                     <a href="/pages/pesquisa_avancada.html"><button style="margin-top: -10px; position: relative; top: -10px;" class="btn">Pesquisa Avançada</button></a>
@@ -145,6 +147,6 @@
    
 
 <script src="js/cabecalho.js"></script>
-<script src="../js/pesquisa-principal.js"></script>
+<script src="/js/pesquisa-principal.js"></script>
 </body>
 </html>

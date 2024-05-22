@@ -1,3 +1,4 @@
+
 const imageRTOnline = document.getElementById('rtonline');
 const imageSaraiva = document.getElementById('saraiva');
 const imageTirant = document.getElementById('tirant');
@@ -13,58 +14,59 @@ const titlePeriodicos = document.querySelector('.periodicos');
 const titleDominioPublico = document.querySelector('.dominiopublico');
 
 
-imageRTOnline.addEventListener('mouseover', function() {
+imageRTOnline.addEventListener('mouseover', function () {
     titleRTOnline.style.display = 'flex';
 });
-imageRTOnline.addEventListener('mouseout', function() {
+imageRTOnline.addEventListener('mouseout', function () {
     titleRTOnline.style.display = 'none';
 });
 
 
-imageSaraiva.addEventListener('mouseover', function() {
+imageSaraiva.addEventListener('mouseover', function () {
     titleSaraiva.style.display = 'flex';
 });
-imageSaraiva.addEventListener('mouseout', function() {
+imageSaraiva.addEventListener('mouseout', function () {
     titleSaraiva.style.display = 'none';
 });
 
-imageTirant.addEventListener('mouseover', function() {
+imageTirant.addEventListener('mouseover', function () {
     titleTirant.style.display = 'flex';
 });
-imageTirant.addEventListener('mouseout', function() {
+imageTirant.addEventListener('mouseout', function () {
     titleTirant.style.display = 'none';
 });
 
-imageBdtd.addEventListener('mouseover', function() {
+imageBdtd.addEventListener('mouseover', function () {
     titleBdtd.style.display = 'flex';
 });
-imageBdtd.addEventListener('mouseout', function() {
+imageBdtd.addEventListener('mouseout', function () {
     titleBdtd.style.display = 'none';
 });
 
-imagePeriodicos.addEventListener('mouseover', function() {
+imagePeriodicos.addEventListener('mouseover', function () {
     titlePeriodicos.style.display = 'flex';
 });
-imagePeriodicos.addEventListener('mouseout', function() {
+imagePeriodicos.addEventListener('mouseout', function () {
     titlePeriodicos.style.display = 'none';
 });
 
-imageDominioPublico.addEventListener('mouseover', function() {
+imageDominioPublico.addEventListener('mouseover', function () {
     titleDominioPublico.style.display = 'flex';
 });
-imageDominioPublico.addEventListener('mouseout', function() {
+imageDominioPublico.addEventListener('mouseout', function () {
     titleDominioPublico.style.display = 'none';
 });
-
 
 const iconEmpty = document.getElementById('infos-horarios');
 const containerHorarios = document.querySelector('.horarios');
 
-iconEmpty.addEventListener('mouseover', function() {
-    containerHorarios.style.display = 'flex';
-});
-iconEmpty.addEventListener('mouseout', function() {
-    containerHorarios.style.display = 'none';
+iconEmpty.addEventListener('click', function () {
+    const computedStyle = window.getComputedStyle(containerHorarios);
+    if (computedStyle.display === 'none') {
+        containerHorarios.style.display = 'flex';
+    } else {
+        containerHorarios.style.display = 'none';
+    }
 });
 
 
@@ -85,8 +87,19 @@ function alertasInputs() {
     } else {
         alert('pesquisa');
     }
-    
+
 }
+
+
+//função para exibir o modal de confirmacao
+function exibeCancel() {
+    const modalConfirmacao = document.querySelector('.modal-confirmacao');
+    const body = document.querySelector('.body');
+    body.style.overflow =  'hidden';
+    modalConfirmacao.style.display = 'flex';
+    document.getElementById('overlay').style.display = 'block';
+}
+
 
 //função para resetar o formulário qdo clicar no botao de cancelar
 function resetaForm() {
@@ -105,13 +118,6 @@ function resetaForm() {
     overlay.style.display = 'none';
 }
 
-//função para exibir o modal de confirmacao
-function exibeCancel() {
-    const modalConfirmacao = document.querySelector('.modal-confirmacao');
-    modalConfirmacao.style.display = 'flex';
-    document.getElementById('overlay').style.display = 'block';
-}
-
 
 //função para confirmar e fazer pesquisa
 function voltarForm() {
@@ -121,3 +127,4 @@ function voltarForm() {
     modalConfirmacao.style.display = 'none';
     overlay.style.display = 'none';
 }
+
