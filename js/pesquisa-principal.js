@@ -1,130 +1,137 @@
+const imageRTOnline = document.getElementById("rtonline");
+const imageSaraiva = document.getElementById("saraiva");
+const imageTirant = document.getElementById("tirant");
+const imageBdtd = document.getElementById("bdtd");
+const imagePeriodicos = document.getElementById("acessolivre");
+const imageDominioPublico = document.getElementById("dominiopublico");
 
-const imageRTOnline = document.getElementById('rtonline');
-const imageSaraiva = document.getElementById('saraiva');
-const imageTirant = document.getElementById('tirant');
-const imageBdtd = document.getElementById('bdtd');
-const imagePeriodicos = document.getElementById('acessolivre');
-const imageDominioPublico = document.getElementById('dominiopublico');
+const titleRTOnline = document.querySelector(".rtonline");
+const titleSaraiva = document.querySelector(".saraiva");
+const titleTirant = document.querySelector(".tirant");
+const titleBdtd = document.querySelector(".bdtd");
+const titlePeriodicos = document.querySelector(".periodicos");
+const titleDominioPublico = document.querySelector(".dominiopublico");
 
-const titleRTOnline = document.querySelector('.rtonline');
-const titleSaraiva = document.querySelector('.saraiva');
-const titleTirant = document.querySelector('.tirant');
-const titleBdtd = document.querySelector('.bdtd');
-const titlePeriodicos = document.querySelector('.periodicos');
-const titleDominioPublico = document.querySelector('.dominiopublico');
-
-
-imageRTOnline.addEventListener('mouseover', function () {
-    titleRTOnline.style.display = 'flex';
+imageRTOnline.addEventListener("mouseover", function () {
+  titleRTOnline.style.display = "flex";
 });
-imageRTOnline.addEventListener('mouseout', function () {
-    titleRTOnline.style.display = 'none';
+imageRTOnline.addEventListener("mouseout", function () {
+  titleRTOnline.style.display = "none";
 });
 
-
-imageSaraiva.addEventListener('mouseover', function () {
-    titleSaraiva.style.display = 'flex';
+imageSaraiva.addEventListener("mouseover", function () {
+  titleSaraiva.style.display = "flex";
 });
-imageSaraiva.addEventListener('mouseout', function () {
-    titleSaraiva.style.display = 'none';
-});
-
-imageTirant.addEventListener('mouseover', function () {
-    titleTirant.style.display = 'flex';
-});
-imageTirant.addEventListener('mouseout', function () {
-    titleTirant.style.display = 'none';
+imageSaraiva.addEventListener("mouseout", function () {
+  titleSaraiva.style.display = "none";
 });
 
-imageBdtd.addEventListener('mouseover', function () {
-    titleBdtd.style.display = 'flex';
+imageTirant.addEventListener("mouseover", function () {
+  titleTirant.style.display = "flex";
 });
-imageBdtd.addEventListener('mouseout', function () {
-    titleBdtd.style.display = 'none';
-});
-
-imagePeriodicos.addEventListener('mouseover', function () {
-    titlePeriodicos.style.display = 'flex';
-});
-imagePeriodicos.addEventListener('mouseout', function () {
-    titlePeriodicos.style.display = 'none';
+imageTirant.addEventListener("mouseout", function () {
+  titleTirant.style.display = "none";
 });
 
-imageDominioPublico.addEventListener('mouseover', function () {
-    titleDominioPublico.style.display = 'flex';
+imageBdtd.addEventListener("mouseover", function () {
+  titleBdtd.style.display = "flex";
 });
-imageDominioPublico.addEventListener('mouseout', function () {
-    titleDominioPublico.style.display = 'none';
+imageBdtd.addEventListener("mouseout", function () {
+  titleBdtd.style.display = "none";
 });
 
-const iconEmpty = document.getElementById('infos-horarios');
-const containerHorarios = document.querySelector('.horarios');
+imagePeriodicos.addEventListener("mouseover", function () {
+  titlePeriodicos.style.display = "flex";
+});
+imagePeriodicos.addEventListener("mouseout", function () {
+  titlePeriodicos.style.display = "none";
+});
 
-iconEmpty.addEventListener('click', function () {
-    const computedStyle = window.getComputedStyle(containerHorarios);
-    if (computedStyle.display === 'none') {
-        containerHorarios.style.display = 'flex';
-    } else {
-        containerHorarios.style.display = 'none';
+imageDominioPublico.addEventListener("mouseover", function () {
+  titleDominioPublico.style.display = "flex";
+});
+imageDominioPublico.addEventListener("mouseout", function () {
+  titleDominioPublico.style.display = "none";
+});
+
+const closeItens = (element) => {
+  window.addEventListener("click", (e) => {
+    var myElementToCheckIfClicksAreInsideOf =
+      document.getElementById("overlay");
+
+    if (myElementToCheckIfClicksAreInsideOf.contains(e.target)) {
+      element.style.display = "none";
+      document.getElementById("overlay").style.display = "none";
     }
+  });
+};
+
+const iconEmpty = document.getElementById("infos-horarios");
+const containerHorarios = document.querySelector(".horarios");
+
+iconEmpty.addEventListener("click", function (e) {
+  document.getElementById("overlay").style.display = "block";
+
+  const computedStyle = window.getComputedStyle(containerHorarios);
+  closeItens(containerHorarios);
+  if (computedStyle.display === "none") {
+    containerHorarios.style.display = "flex";
+  }
+  //   } else {
+  //     containerHorarios.style.display = "none";
+  //   }
 });
-
-
-
 
 //alertas de validação dos inputs
 function alertasInputs() {
-    const inputBiblio = document.getElementById('geral');
-    const inputMidia = document.getElementById('midia');
-    const inputPesquisarPor = document.getElementById('pesquisar-por');
-    const inputArgumento = document.getElementById('argumento');
+  const inputBiblio = document.getElementById("geral");
+  const inputMidia = document.getElementById("midia");
+  const inputPesquisarPor = document.getElementById("pesquisar-por");
+  const inputArgumento = document.getElementById("argumento");
 
-    if (inputBiblio.value == 'empty' ||
-        inputMidia.value == 'empty' ||
-        inputPesquisarPor.value == 'empty' ||
-        inputArgumento.value == '') {
-        alert('Preencha todos os campos do Formulário de Pesquisa.');
-    } else {
-        alert('pesquisa');
-    }
-
+  if (
+    inputBiblio.value == "empty" ||
+    inputMidia.value == "empty" ||
+    inputPesquisarPor.value == "empty" ||
+    inputArgumento.value == ""
+  ) {
+    alert("Preencha todos os campos do Formulário de Pesquisa.");
+  } else {
+    alert("pesquisa");
+  }
 }
-
 
 //função para exibir o modal de confirmacao
 function exibeCancel() {
-    const modalConfirmacao = document.querySelector('.modal-confirmacao');
-    const body = document.querySelector('.body');
-    body.style.overflow =  'hidden';
-    modalConfirmacao.style.display = 'flex';
-    document.getElementById('overlay').style.display = 'block';
+  const modalConfirmacao = document.querySelector(".modal-confirmacao");
+  const body = document.querySelector(".body");
+  body.style.overflow = "hidden";
+  modalConfirmacao.style.display = "flex";
+  document.getElementById("overlay").style.display = "block";
 }
-
 
 //função para resetar o formulário qdo clicar no botao de cancelar
 function resetaForm() {
-    const inputBiblio = document.getElementById('geral');
-    const inputMidia = document.getElementById('midia');
-    const inputPesquisarPor = document.getElementById('pesquisar-por');
-    const inputArgumento = document.getElementById('argumento');
-    const modalConfirmacao = document.querySelector('.modal-confirmacao');
-    const overlay = document.getElementById('overlay');
+  const inputBiblio = document.getElementById("geral");
+  const inputMidia = document.getElementById("midia");
+  const inputPesquisarPor = document.getElementById("pesquisar-por");
+  const inputArgumento = document.getElementById("argumento");
+  const modalConfirmacao = document.querySelector(".modal-confirmacao");
+  const overlay = document.getElementById("overlay");
 
-    inputBiblio.value = 'empty';
-    inputMidia.value = 'empty';
-    inputPesquisarPor.value = 'empty';
-    inputArgumento.value = '';
-    modalConfirmacao.style.display = 'none';
-    overlay.style.display = 'none';
+  inputBiblio.value = "empty";
+  inputMidia.value = "empty";
+  inputPesquisarPor.value = "empty";
+  inputArgumento.value = "";
+  modalConfirmacao.style.display = "none";
+  overlay.style.display = "none";
 }
-
 
 //função para confirmar e fazer pesquisa
 function voltarForm() {
-    const modalConfirmacao = document.querySelector('.modal-confirmacao');
-    const overlay = document.getElementById('overlay');
+  const modalConfirmacao = document.querySelector(".modal-confirmacao");
+  const overlay = document.getElementById("overlay");
 
-    modalConfirmacao.style.display = 'none';
-    overlay.style.display = 'none';
+  modalConfirmacao.style.display = "none";
+  overlay.style.display = "none";
 }
-
