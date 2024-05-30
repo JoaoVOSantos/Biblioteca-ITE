@@ -201,3 +201,8 @@ table caption {
         justify-content: center;
     }
 }
+
+.link-table {
+    color: var(--verde-principal);
+    font-weight: 600;
+}

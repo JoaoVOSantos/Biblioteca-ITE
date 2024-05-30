@@ -206,7 +206,7 @@ a {
 }
 
 .horarios {
-  border-radius: 3px;
+  border-radius: 10px;
   flex-direction: column;
   display: none;
   position: absolute;

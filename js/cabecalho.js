@@ -95,16 +95,64 @@ menuFaleConosco.addEventListener('click', function() {
     menuNovidades.style.color = 'var(--branco-ite)';
 });
 
+// function getWindowSize() {
+//     return {
+//         width: window.innerWidth,
+//         height: window.innerHeight
+//     };
+// }
+
+
+// const menuSanduiche = document.getElementById('menu-sanduiche');
+// const listaCabecalho = document.querySelector('.ul-lista');
+// const cabecalho = document.querySelector('.cabecalho');
+
+// document.getElementById('menu-sanduiche').addEventListener('click', function() {
+//     const size = getWindowSize();
+//     if (listaCabecalho.style.display == 'flex' && size.width < 1158 ) {
+//         listaCabecalho.style.display = 'none';
+//         // cabecalho.style.
+//     } else {
+//         listaCabecalho.style.display = 'flex';
+//     }
+// });
+
+function getWindowSize() {
+    return {
+        width: window.innerWidth,
+        height: window.innerHeight
+    };
+}
 
 const menuSanduiche = document.getElementById('menu-sanduiche');
 const listaCabecalho = document.querySelector('.ul-lista');
 const cabecalho = document.querySelector('.cabecalho');
 
-document.getElementById('menu-sanduiche').addEventListener('click', function() {
-    if (listaCabecalho.style.display == 'flex') {
-        listaCabecalho.style.display = 'none';
-        // cabecalho.style.
-    } else {
+menuSanduiche.addEventListener('click', function() {
+    const size = getWindowSize();
+    if (size.width < 1158) {
+        if (listaCabecalho.style.display === 'flex') {
+            listaCabecalho.style.display = 'none';
+        } else {
+            listaCabecalho.style.display = 'flex';
+        }
+    }
+});
+
+window.addEventListener('resize', function() {
+    const size = getWindowSize();
+    if (size.width >= 1158) {
         listaCabecalho.style.display = 'flex';
+    } else {
+        listaCabecalho.style.display = 'none';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const size = getWindowSize();
+    if (size.width >= 1158) {
+        listaCabecalho.style.display = 'flex';
+    } else {
+        listaCabecalho.style.display = 'none';
     }
 });
