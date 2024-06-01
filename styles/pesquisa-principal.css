@@ -254,7 +254,7 @@ a {
   right: -530px;
   z-index: 20;
   background: var(--branco-ite); */
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
