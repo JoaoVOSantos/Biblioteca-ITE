@@ -116,7 +116,7 @@ a {
     background-color: var(--verde-claro-dois);
 }
 
-.reservas-menu {
+.novidades-menu {
     color: var(--verde-claro-dois);
 }
 
@@ -177,6 +177,50 @@ a {
     color: blue;
 }
 
+
+.container-modal{
+    width: 100%;
+    position: fixed;
+    display: none;
+    top: 30px;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: var(--branco-ite);
+    border-radius: 10px;
+    width: 40%;
+}
+.modal hr{
+    border: 0px;
+    border-top: 1px solid lightgray;
+}
+.modal span{
+    margin: 10px auto;
+}
+.active{
+    display: flex;
+}
+
+.btn-modal {
+    background-color: var(--verde-claro-dois);
+    border: none;
+    color: var(--branco-ite);
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-top: 10px;
+}
+.btn-modal:hover {
+    background-color: var(--verde-principal);
+}
+
 .tabela-notas {
     margin-top: 20px;
     justify-content: center;
@@ -231,4 +275,10 @@ table caption {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+@media (max-width: 545px) {
+    .container-buttons {
+        flex-direction: column;
+    }
 }

@@ -25,7 +25,7 @@ const arr = [inputAssunto,
 function alertaInputs(e) {
     if (idBiblioteca.value == 'geral' && idMidia.value.length <= 0) {
         alert('Selecione a MÍDIA antes de consultar.');
-        return;
+        e.preventDefault();
     }
 
     let isAnyFieldFilled = false;

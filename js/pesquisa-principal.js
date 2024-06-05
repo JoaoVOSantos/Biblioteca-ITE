@@ -77,10 +77,8 @@ iconEmpty.addEventListener("click", function (e) {
   if (computedStyle.display === "none") {
     containerHorarios.style.display = "flex";
   }
-  //   } else {
-  //     containerHorarios.style.display = "none";
-  //   }
 });
+
 
 //alertas de validação dos inputs
 function alertasInputs() {
@@ -135,3 +133,17 @@ function voltarForm() {
   modalConfirmacao.style.display = "none";
   overlay.style.display = "none";
 }
+
+
+
+const btnCancelar = document.getElementById('btn-desktop');
+const modalConfirmacao = document.querySelector(".modal-confirmacao");
+btnCancelar.addEventListener("click", function(e) {
+  document.getElementById("overlay").style.display = "block";
+
+  const computedStyle = window.getComputedStyle(modalConfirmacao);
+  closeItens(modalConfirmacao);
+  if (computedStyle.display === 'none') {
+    modalConfirmacao.style.display = 'flex';
+  }
+})

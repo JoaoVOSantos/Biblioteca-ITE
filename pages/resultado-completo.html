@@ -28,7 +28,7 @@
                         <li><a href="/pages/serviços.html" class="servicos-menu">Serviços</a></li>
                         <li><a href="/index.html" class="pesquisa-menu">Pesquisa</a></li>
                         <li><a href="/pages/reservas.html" class="reservas-menu">Reservas</a></li>
-                        <li><a href="#" class="renovacoes-menu">Renovações</a></li>
+                        <li><a href="/pages/renovacoes.html" class="renovacoes-menu">Renovações</a></li>
                         <li><a href="/pages/acervo.html" class="acervo-menu">Acervo</a></li>
                         <li><a href="/pages/Novidade.html" class="novidades-menu">Novidades</a></li>
                         <li><a href="/pages/faleconosco.html" class="faleconosco-menu">Fale Conosco</a></li>
@@ -38,109 +38,158 @@
         </div>
     </header>
 
-    <div class="container">
 
-        <label for="" style="margin-bottom: 10px;">Resultado da Pesquisa - Formato Completo</label>
-        <table class="tabela-livro">
-            <tr>
-                <td>Autor</td>
-                <td>Banco</td>
-            </tr>
-            <tr>
-                <td>Título</td>
-                <td>Banco</td>
-            </tr>
-            <tr>
-                <td>imprenta</td>
-                <td>Banco</td>
-            </tr>
-            <tr>
-                <td>Desc. Fís.</td>
-                <td>Banco</td>
-            </tr>
-            <tr>
-                <td>Idioma</td>
-                <td>Banco</td>
-            </tr>
-            <tr>
-                <td> Título Original</td>
-                <td>Banco</td>
-            </tr>
-            <tr>
-                <td>Idioma Original</td>
-                <td>Banco</td>
-            </tr>
-            <tr>
-                <td>Tipo Obra</td>
-                <td>Banco <a href="assunto.html" class="a">Assunto</a></td>
-            </tr>
-        </table>
+    <!-- Pagina Resultado da Pesquisa Completo -->
+    <main>
+        <div class="container">
+            <label class="titulo" style="margin-bottom: 10px;">Resultado da Pesquisa - Formato Completo</label>
 
-        <table class="tabela-notas">
-            <tr>
-                <td>Notas</td>
-                <td>Banco</td>
-            </tr>
-        </table>
+            <!-- Div Da tabela Livros -->
+            <div class="tabela-livro">
+                <table>
+                    <tr>
+                        <td>Autor</td>
+                        <td>Banco</td>
+                    </tr>
+                    <tr>
+                        <td>Título</td>
+                        <td>Banco</td>
+                    </tr>
+                    <tr>
+                        <td>imprenta</td>
+                        <td>Banco</td>
+                    </tr>
+                    <tr>
+                        <td>Desc. Fís.</td>
+                        <td>Banco</td>
+                    </tr>
+                    <tr>
+                        <td>Idioma</td>
+                        <td>Banco</td>
+                    </tr>
+                    <tr>
+                        <td> Título Original</td>
+                        <td>Banco</td>
+                    </tr>
+                    <tr>
+                        <td>Idioma Original</td>
+                        <td>Banco</td>
+                    </tr>
+                    <tr>
+                        <td>Tipo Obra</td>
+                        <td>Banco <button onclick="AbrirModal()" class="a"> Assunto </button></td>
+                    </tr>
+                </table>
+            </div>
 
-        <table class="tabela-localizacao">
-            <tr>
-                <td>Localização</td>
-            </tr>
-            <tr>
-                <td>CDD</td>
-                <td>COD - Autor</td>
-                <td>Volume</td>
-            </tr>
-            <tr>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-            </tr>
-        </table>
+            <!-- Div da Tabela Notas -->
+            <div class="tabela-notas">
+                <table>
+                    <tr>
+                        <td>Notas</td>
+                    </tr>
+                    <tr>
+                        <td>Banco</td>
+                    </tr>
+                </table>
+            </div>
 
-        <table class="tabela-exemplares">
-            <tr>
-                <td>Exemplares</td>
-            </tr>
-            <tr>
-                <td>Tombo</td>
-                <td>Edição</td>
-                <td>Reimpresão</td>
-                <td>Ano</td>
-                <td>Páginas</td>
-                <td>ISBN</td>
-                <td>Local</td>
-                <td>Status</td>
-                <td>Biblioteca</td>
-            </tr>
-            <tr>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-                <td>Banco</td>
-            </tr>
-        </table>
+            <!-- Div da Tabela Localizacao -->
+            <div class="tabela-localizacao">
+                <table>
+                    <tr>
+                        <td>Localização</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>CDD</td>
+                        <td>COD - Autor</td>
+                        <td>Volume</td>
+                    </tr>
+                    <tr>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Div da Tabela Exemplares -->
+            <div class="tabela-exemplares">
+                <table>
+                    <tr>
+                        <td>Exemplares</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Tombo</td>
+                        <td>Edição</td>
+                        <td>Reimpressão</td>
+                        <td>Ano</td>
+                        <td>Páginas</td>
+                        <td>ISBN</td>
+                        <td>Local</td>
+                        <td>Status</td>
+                        <td>Biblioteca</td>
+                    </tr>
+                    <tr>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                        <td>Banco</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="container-buttons">
+                <a href="reserva-resultado-completo.html"><button type="button" class="btn-reservar">Reservar</button></a>
+                <a href="Novidade.html"><button type="button" class="btn-novaconsulta">Nova Consulta</button></a>
+            </div>
+
+        </div>
+    </main>
 
 
-        <div class="container-buttons">
-            <button class="btn-reservar"><a href="reserva-resultado-completo.html">Reservar</a></button>
-            <button class="btn-novaconsulta"><a href="Novidade.html">Nova Consulta</a></button>
+
+    <!-- Pop-up Assunto -->
+    <div class="container-modal">
+        <div class="modal">
+            <h2>Assunto</h2>
+            <hr>
+            <span>
+                EXEMPLO: <br>
+                1808 : COMO UMA RAINHA LOUCA, UM PRINCIPE MEDROSO E UMA CORTE CORRUPTA ENGANARAM NAPOLEAO E MUDARAM A HISTORIA DE PORTUGAL E DO BRASIL
+            </span>
+
+            <table>
+                <tr>
+                    <td> CARLOTA JOAQUINA - RAINHA</td>
+                </tr>
+                <tr>
+                    <td> HISTORIA - BRASIL</td>
+                </tr>
+                <tr>
+                    <td> HISTORIA - PERIODO COLONIAL (1500-1822) - BRASIL</td>
+                </tr>
+            </table>
+            <hr>
+            <div class="btns-modal">
+                <button class="btn-modal" onclick="FecharModal()">OK</button>
+                <button class="btn-modal" onclick="FecharModal()">Cancelar</button>
+            </div>
         </div>
 
     </div>
-
-
-
-
     <script src="../js/cabecalho.js"></script>
-
-
+    <script src="../js/resultado-completo.js"></script>
 </body>
-
 </html>
